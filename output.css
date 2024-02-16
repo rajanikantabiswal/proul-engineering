@@ -390,6 +390,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 2rem;
+  align-items: flex-end;
 }
 .about .box-container .box {
   text-align: center;
@@ -406,6 +407,40 @@ section {
   color: var(--light-color);
   line-height: 2;
   padding-top: 0.5rem;
+}
+
+.services {
+  background: var(--light-bg);
+}
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.services .box-container .box {
+  text-align: center;
+  padding: 3rem;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+.services .box-container .box:hover img {
+  transform: translateY(-1rem);
+}
+.services .box-container .box img {
+  height: 7rem;
+  margin-bottom: 0.5rem;
+}
+.services .box-container .box h3 {
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+.services .box-container .box p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  line-height: 2;
 }
 
 @media (max-width: 1200px) {
