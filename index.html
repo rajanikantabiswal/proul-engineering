@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction website</title>
+    <!-- font-awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- swiper js cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="input.scss">
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header class="header">
+      <a href="#" class="logo">We<span>Build</span></a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#blogs">Blogs</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="info-btn" class="fas fa-info-circle"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" name="" placeholder="Search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <form action="" class="login-form">
+        <h3>Login From</h3>
+        <input type="email" placeholder="enter your email" class="box">
+        <input type="password" placeholder="enter your password" class="box">
+        <div class="flex">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">Remember Me</label>
+            <a href="#"> Frogot Passowrd?</a>
+        </div>
+        <input type="Submit" value="Login Now" class="btn">
+        <p>Don't have an account <a href="#">Create one!</a></p>
+      </form>
+    </header>
+
+    <div class="contact-info">
+        <div id="close-contact-info" class="fas fa-times">
+
+        </div>
+
+        <div class="info">
+            <i class="fas fa-phone"></i>
+            <h3>Phone Number</h3>
+            <p>+91 8018886342</p>
+            <p>+91 8144504092</p>
+        </div>
+        <div class="info">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Address</h3>
+            <p>info@webuilld.com</p>
+        </div>
+
+        <div class="info">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Office Address</h3>
+            <p>Bhubaneswar, Odisha -751002</p>
+        </div>   
+        
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Home Section start -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide slide" style="background: url(image/home-slide-1.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>We Provide best serviice</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, animi!</p>
+                        <a href="#about" class="btn">Get Started</a>
+                    </div>
+                </section>
+                <section class="swiper-slide slide" style="background: url(image/home-slide-2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Making dream come to life</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, animi!</p>
+                        <a href="#about" class="btn">Get Started</a>
+                    </div>
+                </section>
+                <section class="swiper-slide slide" style="background: url(image/home-slide-3.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>from concept to creation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, animi!</p>
+                        <a href="#about" class="btn">Get Started</a>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <h1 class="heading">About us</h1>
+
+        <div class="row">
+            <div class="video">
+                <video src="video/video.mp4" loop muted autoplay></video>
+            </div>
+            <div class="content">
+                <h3>We will provide you the best work which you dream for!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro beatae error impedit rem a similique sint, temporibus officia ipsam dolore, modi cum odit officiis ipsum, recusandae minus facere aliquid et!</p>
+                <a href="#services" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <h3>10+</h3>
+                <p>years of experience</p>
+            </div>
+            <div class="box">
+                <h3>1500+</h3>
+                <p>Project Completed</p>
+            </div>
+            <div class="box">
+                <h3>790+</h3>
+                <p>Satisfied Clients</p>
+            </div>
+            <div class="box">
+                <h3>450+</h3>
+                <p>Active Workers</p>
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+
+
+    <!-- swiper js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
