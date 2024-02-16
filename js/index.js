@@ -47,3 +47,5 @@ var swiper = new Swiper(".home-slider", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  lightGallery(document.querySelector('.projects .box-container'));
