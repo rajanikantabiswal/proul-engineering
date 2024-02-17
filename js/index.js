@@ -51,46 +51,58 @@ var swiper = new Swiper(".home-slider", {
 lightGallery(document.querySelector(".projects .box-container"));
 
 var swiper = new Swiper(".review-slider", {
-  slidesPerView: 3,
-  spaceBetween: 30,
   freeMode: true,
   loop: true,
   grabCursor: true,
   breakpoints: {
-    "@0.00": {
+    480: {
       slidesPerView: 1,
       spaceBetween: 10,
     },
-    "@0.75": {
+    640: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    "@1.00": {
-        slidesPerView: 3,
-        spaceBetween: 20,
+    890: {
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
   },
 });
 
-
 var swiper = new Swiper(".blogs-slider", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    freeMode: true,
-    loop: true,
-    grabCursor: true,
-    breakpoints: {
-      "@0.00": {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      "@0.75": {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      "@1.00": {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
+  spaceBetween: 20,
+  loop: true,
+  grabCursor: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
     },
-  });
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".logo-slider", {
+  spaceBetween: 20,
+  loop: true,
+  grabCursor: true,
+  breakpoints: {
+    450: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});
