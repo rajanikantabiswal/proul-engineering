@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-  --yellow: #f5bf23;
-  --black: #111;
+  --yellow: rgba(192,55,87,1);
+  --gradient: linear-gradient(90deg, rgba(0,126,166,1) 0%, rgba(14,98,178,1) 21%, rgba(86,64,159,1) 40%, rgba(134,39,146,1) 60%, rgba(175,48,107,1) 82%, rgba(192,55,87,1) 100%);
+  --black: rgb(0, 75, 98);
   --white: #fff;
   --light-color: #666;
   --light-bg: #eee;
@@ -32,7 +33,7 @@ html::-webkit-scrollbar-track {
   background: transparent;
 }
 html::-webkit-scrollbar-thumb {
-  background: var(--yellow);
+  background: var(--gradient);
 }
 
 section {
@@ -59,8 +60,8 @@ section {
   text-transform: capitalize;
 }
 .btn:hover {
-  background: var(--yellow);
-  color: var(--black);
+  background: var(--gradient);
+  color: var(--white);
   transition: 0.2s linear;
 }
 
@@ -91,6 +92,9 @@ section {
 .header .logo span {
   color: var(--yellow);
 }
+.header a img {
+  width: 20rem;
+}
 .header .navbar a {
   font-size: 2rem;
   color: var(--black);
@@ -112,8 +116,9 @@ section {
   margin-left: 0.3rem;
 }
 .header .icons div:hover {
-  background: var(--black);
+  background: var(--gradient);
   color: var(--white);
+  transition: 0.2s linear;
 }
 .header #menu-btn {
   display: none;
@@ -261,8 +266,9 @@ section {
   margin-bottom: 0.5rem;
 }
 .contact-info .info i:hover {
-  background: var(--black);
+  background: var(--gradient);
   color: var(--white);
+  transition: 0.2s linear;
 }
 .contact-info .info h3 {
   font-size: 2rem;
@@ -293,8 +299,9 @@ section {
   margin: 0 0.3rem;
 }
 .contact-info .share a:hover {
-  background: var(--black);
+  background: var(--gradient);
   color: var(--white);
+  transition: 0.2s linear;
 }
 
 .home {
@@ -326,6 +333,10 @@ section {
   color: var(--black);
   text-transform: capitalize;
   text-transform: uppercase;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .home .slide .content p {
   font-size: 1.4rem;
@@ -348,13 +359,17 @@ section {
 }
 .home .swiper-button-next:hover,
 .home .swiper-button-prev:hover {
-  background: var(--yellow);
+  background: var(--gradient);
   transition: 0.2s linear;
 }
 .home .swiper-button-next::after,
 .home .swiper-button-prev::after {
   font-size: 2rem;
   color: var(--black);
+}
+.home .swiper-button-next::after:hover,
+.home .swiper-button-prev::after:hover {
+  color: var(--white);
 }
 .home .swiper-button-prev {
   right: 7rem;
@@ -494,7 +509,7 @@ section {
 .projects .box-container .box .content i {
   width: 7.5rem;
   font-size: 3rem;
-  background: var(--yellow);
+  background: var(--gradient);
   color: var(--white);
   cursor: pointer;
   text-align: center;
@@ -564,8 +579,8 @@ section {
   line-height: 7rem;
   margin-bottom: 2rem;
   border-radius: 50%;
-  color: var(--black);
-  background: var(--yellow);
+  color: var(--white);
+  background: var(--gradient);
 }
 .pricing .box-container .box h3 {
   font-size: 1.7rem;
@@ -678,10 +693,10 @@ section {
   text-align: center;
 }
 .logo-container img {
-  width: 15rem;
-  height: 10rem;
+  height: 7rem;
   pointer-events: none;
   user-select: none;
+  filter: grayscale(100%); /* Convert logos to black and white */
 }
 
 .footer {
@@ -708,8 +723,8 @@ section {
   box-shadow: var(--box-shadow);
 }
 .footer .links .footer-btn:hover {
-  background: var(--yellow);
-  color: var(--black);
+  background: var(--gradient);
+  color: var(--white);
   transition: 0.2s linear;
 }
 .footer .credit {
@@ -785,6 +800,9 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .header a img {
+    width: 15rem;
   }
 }
 

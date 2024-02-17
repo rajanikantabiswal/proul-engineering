@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --yellow: #f5bf23;
-  --black: #111;
+//   --yellow: #f5bf23;
+  --yellow: rgba(192,55,87,1);
+  --gradient: linear-gradient(90deg, rgba(0,126,166,1) 0%, rgba(14,98,178,1) 21%, rgba(86,64,159,1) 40%, rgba(134,39,146,1) 60%, rgba(175,48,107,1) 82%, rgba(192,55,87,1) 100%);
+//   --black: #111;
+  --black: rgb(0, 75, 98);
   --white: #fff;
   --light-color: #666;
   --light-bg: #eee;
@@ -45,8 +48,10 @@
   text-align: center;
 
   &:hover {
-    background: var(--black);
+    // background: var(--black);
+    background: var(--gradient);
     color: var(--white);
+    transition: .2s linear;
   }
 }
 html {
@@ -62,7 +67,7 @@ html {
     background: transparent;
   }
   &::-webkit-scrollbar-thumb {
-    background: var(--yellow);
+    background: var(--gradient);
   }
 }
 
@@ -88,8 +93,9 @@ section {
   text-transform: capitalize;
 
   &:hover {
-    background: var(--yellow);
-    color: var(--black);
+    background: var(--gradient);
+    // color: var(--black);
+    color: var(--white);
     transition: 0.2s linear;
   }
 }
@@ -118,6 +124,10 @@ section {
       color: var(--yellow);
     }
   }
+  a img{
+    width: 20rem;
+  }
+
   .navbar a {
     @include titleText((2rem));
     margin: 0 1rem;
@@ -324,6 +334,10 @@ section {
       h3 {
         @include titleText(6rem);
         text-transform: uppercase;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
       }
       p {
         @include graphText(1.4rem);
@@ -346,8 +360,9 @@ section {
     font-size: 3rem;
 
     &:hover {
-      background: var(--yellow);
+      background: var(--gradient);
       transition: 0.2s linear;
+      
     }
   }
 
@@ -355,6 +370,10 @@ section {
   .swiper-button-prev::after {
     font-size: 2rem;
     color: var(--black);
+
+    &:hover{
+        color:var(--white);
+    }
   }
   .swiper-button-prev {
     right: 7rem;
@@ -492,7 +511,7 @@ section {
         i {
           width: 7.5rem;
           font-size: 3rem;
-          background: var(--yellow);
+          background: var(--gradient);
           color: var(--white);
           cursor: pointer;
           text-align: center;
@@ -565,8 +584,8 @@ section {
         line-height: 7rem;
         margin-bottom: 2rem;
         border-radius: 50%;
-        color: var(--black);
-        background: var(--yellow);
+        color: var(--white);
+        background: var(--gradient);
       }
       h3 {
         @include titleText(1.7rem);
@@ -684,10 +703,11 @@ section {
   text-align: center;
 
   img {
-    width: 15rem;
-    height: 10rem;
+    //width: 15rem;
+    height: 7rem;
     pointer-events: none;
     user-select: none;
+    filter: grayscale(100%); /* Convert logos to black and white */
   }
 }
 
@@ -712,8 +732,9 @@ section {
       box-shadow: var(--box-shadow);
 
       &:hover{
-        background: var(--yellow);
-        color: var(--black);
+        background: var(--gradient);
+        // color: var(--black);
+        color: var(--white);
         transition: .2s linear;
       }
     }
@@ -810,5 +831,10 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .header{
+    a img{
+        width: 15rem;
+    }
   }
 }

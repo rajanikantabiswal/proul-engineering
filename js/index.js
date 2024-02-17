@@ -92,7 +92,7 @@ var swiper = new Swiper(".logo-slider", {
   loop: true,
   grabCursor: true,
   breakpoints: {
-    450: {
+    0: {
       slidesPerView: 2,
     },
     640: {
@@ -106,3 +106,4 @@ var swiper = new Swiper(".logo-slider", {
     },
   },
 });
+
