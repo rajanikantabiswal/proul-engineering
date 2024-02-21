@@ -156,6 +156,10 @@ html::-webkit-scrollbar-thumb {
   top: 15px;
 }
 
+.faq .accordion i {
+  margin-right: 2rem;
+}
+
 .faq .accordion-body {
   padding: 0 30px 25px 60px;
   border: 0;
