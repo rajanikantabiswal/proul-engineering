@@ -36,6 +36,10 @@ html::-webkit-scrollbar-thumb {
   background: var(--gradient);
 }
 
+a {
+  text-decoration: none;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -892,6 +896,93 @@ section {
 .mission-vision .row .vision p {
   padding-top: 1rem;
   font-size: 1.5rem;
+}
+
+/*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
+.service-details .services-list {
+  padding: 10px 30px;
+  border: 1px solid #d3dff3;
+  margin-bottom: 20px;
+}
+
+.service-details .services-list a {
+  display: block;
+  padding: 8px 0 8px 15px;
+  border-left: 3px solid #c2cbdf;
+  margin: 20px 0;
+  color: var(--black);
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+  transition: 0.3s;
+}
+
+.service-details .services-list a.active {
+  font-weight: 700;
+  border-color: var(--yellow);
+}
+
+.service-details .services-list a:hover {
+  border-color: var(--yellow);
+}
+
+.service-details .services-img {
+  margin-bottom: 20px;
+}
+
+.service-details h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.service-details h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.service-details p {
+  font-size: 15px;
+}
+
+.service-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.service-details ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.service-details ul i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: var(--yellow);
+}
+
+.service-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.service-category .footer-btn {
+  padding: 0.7rem 1.2rem;
+  font-size: 1.2rem;
+  color: var(--black);
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+.service-category .footer-btn:hover {
+  background: var(--gradient);
+  color: var(--white);
+  transition: 0.2s linear;
 }
 
 @media (max-width: 1200px) {
