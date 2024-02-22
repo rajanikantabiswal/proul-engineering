@@ -41,6 +41,11 @@ window.onscroll = () => {
 
 var swiper = new Swiper(".home-slider", {
   loop: true,
+  direction: 'horizontal',
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   grabCursor: true,
   navigation: {
     nextEl: ".swiper-button-next",
