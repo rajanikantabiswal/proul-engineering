@@ -247,7 +247,7 @@ section {
   }
 }
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -256,7 +256,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 100;
+  z-index: 1000;
   background: var(--white);
 
   .logo {
@@ -1132,3 +1132,5 @@ section {
     height: 50vh;
   }
 }
+
+
