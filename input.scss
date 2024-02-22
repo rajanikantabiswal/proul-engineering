@@ -83,13 +83,16 @@ div.main{
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs .page-header {
+.breadcrumbs{
+.page-header {
   padding: 80px 0 80px 0;
   position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+}
+
 
 .breadcrumbs .page-header:before {
   content: "";
@@ -247,7 +250,7 @@ section {
   }
 }
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -450,7 +453,7 @@ section {
 }
 
 .home {
-  padding: 2rem 0;
+  padding: 0;
   .slide {
     min-height: 60rem;
     display: flex;
