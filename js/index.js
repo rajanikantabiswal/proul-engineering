@@ -53,6 +53,11 @@ lightGallery(document.querySelector(".projects .box-container"));
 var swiper = new Swiper(".review-slider", {
   freeMode: true,
   loop: true,
+  direction: 'horizontal',
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   grabCursor: true,
   breakpoints: {
     480: {
@@ -73,6 +78,11 @@ var swiper = new Swiper(".review-slider", {
 var swiper = new Swiper(".blogs-slider", {
   spaceBetween: 20,
   loop: true,
+  direction: 'horizontal',
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   grabCursor: true,
   breakpoints: {
     640: {
@@ -90,6 +100,11 @@ var swiper = new Swiper(".blogs-slider", {
 var swiper = new Swiper(".logo-slider", {
   spaceBetween: 20,
   loop: true,
+  direction: 'horizontal',
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   grabCursor: true,
   breakpoints: {
     0: {
